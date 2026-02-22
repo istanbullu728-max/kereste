@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: var(--font-playfair), serif;
+  --font-sans: var(--font-manrope), sans-serif;
+  --font-montserrat: var(--font-montserrat), sans-serif;
+  --font-oswald: var(--font-oswald), sans-serif;
+
+  --color-timber-anthracite: #18181B;
+  /* Deep Forest Anthracite */
+  --color-timber-beige: #D8CDC4;
+  /* Natural Oak Beige */
+  --color-timber-white: #FAFAF9;
+  /* Premium Silk White */
+  --color-timber-highlight: #A65D57;
+  /* Burnt Clay / Warm Highlight */
+
+  --shadow-soft: 0 20px 40px -10px rgba(24, 24, 27, 0.05);
+  --shadow-glass: 0 8px 32px 0 rgba(255, 255, 255, 0.07);
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+}
+
+/* Custom Scrollbar for Webkit */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-timber-beige);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-timber-highlight);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-timber-white);
+  color: var(--color-timber-anthracite);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+}
+
+/* --- Mobile Specific Optimizations (max-width: 768px) --- */
+@media (max-width: 768px) {
+
+  /* Click Scale Effect for Touch Devices */
+  .active\:scale-95:active {
+    transform: scale(0.96);
+    transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Mobile Text Adjustments */
+  h1 {
+    line-height: 1.1 !important;
+  }
+
+  p {
+    line-height: 1.6 !important;
+  }
+
+  /* Fixed Action Bar Padding */
+  body {
+    padding-bottom: 80px;
+    /* Space for fixed bottom bar */
+  }
+}
