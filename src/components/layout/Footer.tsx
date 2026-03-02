@@ -34,9 +34,9 @@ export function Footer() {
                         </nav>
                     </div>
 
-                    {/* Column 3: Ürünlerimiz */}
+                    {/* Column 3: Çalışmalarımız */}
                     <div className="flex flex-col items-start space-y-4 sm:space-y-6">
-                        <h3 className="font-display font-semibold text-gray-900 text-base sm:text-lg">Ürünlerimiz</h3>
+                        <h3 className="font-display font-semibold text-gray-900 text-base sm:text-lg">Çalışmalarımız</h3>
                         <nav className="flex flex-col space-y-2 sm:space-y-3">
                             {["Kereste Grupları", "Plywood", "Lambri", "Özel Kesim"].map((item) => (
                                 <Link key={item} href="/products" className="text-xs sm:text-sm hover:text-black hover:translate-x-1 transition-all duration-300">

@@ -77,7 +77,7 @@ export function Products() {
     const infiniteProducts = [...products, ...products];
 
     return (
-        <section className="pt-16 pb-4 sm:pt-20 sm:pb-8 md:pt-28 md:pb-16 bg-timber-white text-timber-anthracite overflow-hidden" id="urunlerimiz">
+        <section className="pt-16 pb-4 sm:pt-20 sm:pb-8 md:pt-28 md:pb-16 bg-timber-white text-timber-anthracite overflow-hidden" id="calismalarimiz">
             <div className="container mx-auto px-4 sm:px-6 relative">
 
                 {/* Header & Controls */}

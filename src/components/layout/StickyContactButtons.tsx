@@ -18,8 +18,8 @@ export function StickyContactButtons() {
             icon: MessageCircle,
             label: "WhatsApp'tan Ulaş",
             href: "https://wa.me/905399471300",
-            color: "bg-[#25D366]",
-            hoverColor: "hover:bg-[#128C7E]",
+            color: "bg-[#2D5A27]",
+            hoverColor: "hover:bg-[#1F3F1C]",
             ariaLabel: "WhatsApp ile iletişime geç"
         },
         {

@@ -45,20 +45,20 @@ export function Header() {
                     </Link>
 
                     {/* Desktop Nav */}
-                    <nav className="hidden md:flex items-center gap-5">
+                    <nav className="hidden md:flex items-center gap-8">
                         {navItems.map((item) => (
                             <Link
                                 key={item.name}
                                 href={item.href}
                                 className={cn(
-                                    "text-sm font-medium tracking-wide transition-all duration-300 hover:text-timber-highlight relative group",
+                                    "text-sm font-semibold tracking-[0.08em] transition-all duration-300 hover:text-[#A08355] relative group py-1 px-0.5",
                                     isTransparent ? "text-white/90" : "text-timber-anthracite/80",
-                                    pathname === item.href && "text-timber-highlight"
+                                    pathname === item.href && "text-[#A08355]"
                                 )}
                             >
                                 {item.name}
                                 <span className={cn(
-                                    "absolute -bottom-1 left-0 h-[2px] bg-timber-highlight transition-all duration-300 group-hover:w-full",
+                                    "absolute -bottom-1 left-0 h-[2px] bg-[#A08355]/70 transition-all duration-300 group-hover:w-full",
                                     pathname === item.href ? "w-full" : "w-0"
                                 )}></span>
                             </Link>

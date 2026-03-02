@@ -55,8 +55,10 @@ export function Hero() {
                     className="object-cover object-center"
                     priority
                     sizes="100vw"
-                    style={{ filter: "brightness(1.5) contrast(0.95)" }}
+                    style={{ filter: "brightness(1.3) contrast(0.95)" }}
                 />
+                {/* ── %35 Karartma Overlay — metin okunabilirliği için ── */}
+                <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/35 to-black/50" />
             </div>
 
             {/* ── Grain texture overlay ── */}
@@ -136,11 +138,17 @@ export function Hero() {
                 {/* CTA */}
                 <motion.div variants={itemVariants} className="mb-7 sm:mb-10">
                     <Link
-                        href="#urunlerimiz"
-                        className="group inline-flex items-center justify-center gap-2 px-5 py-2.5 sm:px-7 sm:py-3.5 md:px-8 md:py-4 rounded-full bg-amber-400 text-stone-900 text-xs sm:text-sm font-bold tracking-widest uppercase shadow-xl hover:bg-amber-300 transition-all duration-300 active:scale-95"
+                        href="#calismalarimiz"
+                        className="group inline-flex items-center justify-center px-5 py-2.5 sm:px-7 sm:py-3.5 md:px-8 md:py-4 rounded-full text-stone-900 text-xs sm:text-sm font-extrabold tracking-widest uppercase shadow-xl transition-all duration-300 active:scale-95"
+                        style={{
+                            background: "linear-gradient(135deg, #C5A059 0%, #B8860B 50%, #A0722A 100%)",
+                            boxShadow: "0 4px 20px rgba(180,130,30,0.4), 0 1px 0 rgba(255,255,255,0.2) inset"
+                        }}
+                        onMouseEnter={e => (e.currentTarget.style.background = "linear-gradient(135deg, #D4AF6A 0%, #C5A059 50%, #B8860B 100%)")}
+                        onMouseLeave={e => (e.currentTarget.style.background = "linear-gradient(135deg, #C5A059 0%, #B8860B 50%, #A0722A 100%)")}
                     >
-                        Ürünleri İncele
-                        <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                        Çalışmaları İncele
+                        <ArrowRight className="w-[17px] h-[17px] ml-3 transition-transform duration-300 group-hover:translate-x-1" strokeWidth={2.8} />
                     </Link>
                 </motion.div>
 
