@@ -35,7 +35,7 @@ export function StickyContactButtons() {
     return (
         <AnimatePresence>
             {isVisible && (
-                <div className="fixed bottom-5 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col gap-3 sm:gap-4 items-end pointer-events-none">
+                <div className="fixed bottom-5 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col gap-4 sm:gap-4 items-end pointer-events-none">
                     {buttons.map((btn, index) => (
                         <motion.a
                             key={index}
@@ -54,16 +54,22 @@ export function StickyContactButtons() {
                             rel={btn.href.startsWith("http") ? "noopener noreferrer" : undefined}
                             className={cn(
                                 "pointer-events-auto",
-                                "group flex items-center justify-center rounded-full shadow-lg transition-colors duration-200",
+                                "group flex flex-col sm:flex-row items-center justify-center rounded-[20px] sm:rounded-full shadow-lg transition-colors duration-200",
                                 "text-white border border-white/10",
-                                /* Mobil: sadece ikon, sm+: etiketli */
-                                "w-12 h-12 sm:w-auto sm:h-auto sm:pl-4 sm:pr-6 sm:py-3.5 sm:gap-3",
+                                /* Mobil: karemsi ikon+metin, sm+: yatay hap şeklinde hap */
+                                "w-[60px] py-2 sm:w-auto sm:h-auto sm:pl-4 sm:pr-6 sm:py-3.5 sm:gap-3",
                                 btn.color,
                                 btn.hoverColor,
                             )}
                             aria-label={btn.ariaLabel}
                         >
-                            <btn.icon size={21} strokeWidth={2.2} />
+                            <btn.icon size={24} strokeWidth={2.2} className="sm:w-[21px] sm:h-[21px]" />
+                            {/* Mobil alt yazı */}
+                            <span className="block sm:hidden text-[10px] font-medium leading-none mt-1.5 opacity-90">
+                                {btn.icon === MessageCircle ? "WhatsApp" : "Telefon"}
+                            </span>
+
+                            {/* Desktop yan yazı */}
                             <span className="hidden sm:block font-display font-bold text-base tracking-wide whitespace-nowrap leading-none">
                                 {btn.label}
                             </span>

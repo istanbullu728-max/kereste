@@ -147,7 +147,8 @@ export function Hero() {
                         onMouseEnter={e => (e.currentTarget.style.background = "linear-gradient(135deg, #D4AF6A 0%, #C5A059 50%, #B8860B 100%)")}
                         onMouseLeave={e => (e.currentTarget.style.background = "linear-gradient(135deg, #C5A059 0%, #B8860B 50%, #A0722A 100%)")}
                     >
-                        Çalışmaları İncele
+                        <span className="sm:hidden">Teklif Al</span>
+                        <span className="hidden sm:inline">Çalışmaları İncele</span>
                         <ArrowRight className="w-[19px] h-[19px] ml-3 transition-transform duration-300 group-hover:translate-x-1" strokeWidth={2.8} />
                     </Link>
                 </motion.div>
