@@ -44,7 +44,7 @@ export function Hero() {
     }, []);
 
     return (
-        <section className="relative w-full h-[75vh] sm:min-h-screen flex flex-col items-center justify-start sm:justify-center overflow-hidden pt-28 sm:pt-0">
+        <section className="relative w-full h-[85vh] sm:min-h-screen flex flex-col items-center justify-start sm:justify-center overflow-hidden pt-28 sm:pt-0">
 
             {/* ── Background Image ── */}
             <div className="absolute inset-0 z-0">
@@ -76,14 +76,14 @@ export function Hero() {
 
             {/* ── TEXT BLOCK ── */}
             <motion.div
-                className="relative z-10 flex flex-col items-center text-center px-4 sm:px-8 w-full max-w-4xl mx-auto pt-4 sm:pt-24 pb-10"
+                className="relative z-10 flex flex-col items-center text-center px-4 sm:px-8 w-full max-w-4xl mx-auto pt-6 sm:pt-24 pb-10"
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
             >
                 {/* Badge */}
-                <motion.div variants={itemVariants} className="mb-4 sm:mb-6">
-                    <span className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md border border-white/50 text-white text-[10px] sm:text-[11px] font-bold tracking-[0.25em] sm:tracking-[0.3em] uppercase px-4 sm:px-5 py-2 sm:py-2.5 rounded-full" style={{ boxShadow: "inset 0 1px 0 rgba(255,255,255,0.3), 0 4px 16px rgba(0,0,0,0.2)" }}>
+                <motion.div variants={itemVariants} className="mb-5 sm:mb-6">
+                    <span className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md border border-white/50 text-white text-[11px] sm:text-[11px] font-bold tracking-[0.25em] sm:tracking-[0.3em] uppercase px-5 sm:px-5 py-2.5 sm:py-2.5 rounded-full" style={{ boxShadow: "inset 0 1px 0 rgba(255,255,255,0.3), 0 4px 16px rgba(0,0,0,0.2)" }}>
                         <span className="w-1.5 h-1.5 rounded-full bg-amber-400 inline-block animate-pulse" />
                         Hatay • Antakya
                     </span>
@@ -92,7 +92,7 @@ export function Hero() {
                 {/* Brand name */}
                 <motion.h2
                     variants={itemVariants}
-                    className="text-white/90 font-display font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-xl sm:text-xl md:text-2xl lg:text-3xl mb-1.5 sm:mb-2"
+                    className="text-white/90 font-display font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[24px] sm:text-xl md:text-2xl lg:text-3xl mb-1.5 sm:mb-2"
                     style={{ textShadow: "0 2px 20px rgba(0,0,0,0.5)" }}
                 >
                     Zeynel İstanbullu Kereste
@@ -100,15 +100,15 @@ export function Hero() {
 
                 {/* Divider */}
                 <motion.div variants={itemVariants} className="flex items-center gap-4 sm:gap-4 mb-3 sm:mb-0">
-                    <span className="h-[2px] w-14 sm:w-20 bg-gradient-to-r from-transparent to-amber-400/80" />
-                    <span className="text-amber-400 text-lg sm:text-xl">✦</span>
-                    <span className="h-[2px] w-14 sm:w-20 bg-gradient-to-l from-transparent to-amber-400/80" />
+                    <span className="h-[2px] w-16 sm:w-20 bg-gradient-to-r from-transparent to-amber-400/80" />
+                    <span className="text-amber-400 text-xl sm:text-xl">✦</span>
+                    <span className="h-[2px] w-16 sm:w-20 bg-gradient-to-l from-transparent to-amber-400/80" />
                 </motion.div>
 
                 {/* Animated product name */}
                 <motion.div
                     variants={itemVariants}
-                    className="relative h-[66px] sm:h-[68px] md:h-[82px] lg:h-[95px] w-full flex justify-center items-center overflow-hidden mb-4 sm:mb-4"
+                    className="relative h-[72px] sm:h-[68px] md:h-[82px] lg:h-[95px] w-full flex justify-center items-center overflow-hidden mb-5 sm:mb-4"
                 >
                     <AnimatePresence mode="wait">
                         <motion.h1
@@ -117,7 +117,7 @@ export function Hero() {
                             animate={{ y: 0, opacity: 1 }}
                             exit={{ y: "-100%", opacity: 0 }}
                             transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
-                            className="absolute font-serif font-black italic text-amber-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tighter leading-none py-1 drop-shadow-2xl w-full text-center px-4"
+                            className="absolute font-serif font-black italic text-amber-400 text-[48px] sm:text-5xl md:text-6xl lg:text-7xl tracking-tighter leading-none py-1 drop-shadow-2xl w-full text-center px-4"
                             style={{ textShadow: "0 4px 30px rgba(0,0,0,0.6)" }}
                         >
                             {products[index]}
@@ -128,7 +128,7 @@ export function Hero() {
                 {/* Tagline */}
                 <motion.p
                     variants={itemVariants}
-                    className="text-white/95 text-[15px] sm:text-base md:text-lg font-normal tracking-wide mb-8 sm:mb-10 max-w-sm sm:max-w-lg"
+                    className="text-white/95 text-[16px] sm:text-base md:text-lg font-normal tracking-wide mb-9 sm:mb-10 max-w-sm sm:max-w-lg"
                     style={{ textShadow: "0 2px 12px rgba(0,0,0,0.8), 0 1px 3px rgba(0,0,0,0.9)" }}
                 >
                     30 yıllık tecrübeyle kaliteli ahşap ürünler,{" "}
@@ -139,7 +139,7 @@ export function Hero() {
                 <motion.div variants={itemVariants} className="mb-4 sm:mb-10">
                     <Link
                         href="#calismalarimiz"
-                        className="group inline-flex items-center justify-center px-6 py-3 sm:px-7 sm:py-3.5 md:px-8 md:py-4 rounded-full text-stone-900 text-[14px] sm:text-sm font-extrabold tracking-widest uppercase shadow-xl transition-all duration-300 active:scale-95"
+                        className="group inline-flex items-center justify-center px-7 py-3.5 sm:px-7 sm:py-3.5 md:px-8 md:py-4 rounded-full text-stone-900 text-[15px] sm:text-sm font-extrabold tracking-widest uppercase shadow-xl transition-all duration-300 active:scale-95"
                         style={{
                             background: "linear-gradient(135deg, #C5A059 0%, #B8860B 50%, #A0722A 100%)",
                             boxShadow: "0 4px 20px rgba(180,130,30,0.4), 0 1px 0 rgba(255,255,255,0.2) inset"
@@ -148,7 +148,7 @@ export function Hero() {
                         onMouseLeave={e => (e.currentTarget.style.background = "linear-gradient(135deg, #C5A059 0%, #B8860B 50%, #A0722A 100%)")}
                     >
                         Çalışmaları İncele
-                        <ArrowRight className="w-[18px] h-[18px] ml-3 transition-transform duration-300 group-hover:translate-x-1" strokeWidth={2.8} />
+                        <ArrowRight className="w-[19px] h-[19px] ml-3 transition-transform duration-300 group-hover:translate-x-1" strokeWidth={2.8} />
                     </Link>
                 </motion.div>
 
