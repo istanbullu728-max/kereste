@@ -20,10 +20,16 @@ export function Products() {
         }
     };
 
+    const getItemWidth = () => {
+        if (typeof window === "undefined") return 304; // Default desktop width
+        if (window.innerWidth >= 768) return 280 + 24; // md
+        if (window.innerWidth >= 640) return 240 + 24; // sm
+        return 200 + 16; // mobile
+    };
+
     const scroll = (direction: "left" | "right") => {
         if (scrollContainerRef.current) {
-            // Scroll by one item width
-            const itemWidth = 280 + 24; // Item width + gap
+            const itemWidth = getItemWidth();
             const currentScroll = scrollContainerRef.current.scrollLeft;
             const newScrollLeft = direction === "left"
                 ? currentScroll - itemWidth
@@ -36,16 +42,15 @@ export function Products() {
         }
     };
 
-    // Auto-scroll — sadece masaüstünde
+    // Auto-scroll (Both Desktop & Mobile)
     useEffect(() => {
         let intervalId: NodeJS.Timeout;
-        const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
 
-        if (!isHovered && !isMobile) {
+        if (!isHovered) {
             intervalId = setInterval(() => {
                 if (scrollContainerRef.current) {
                     const { scrollLeft } = scrollContainerRef.current;
-                    const itemWidth = 280 + 24;
+                    const itemWidth = getItemWidth();
                     const singleSetWidth = products.length * itemWidth;
 
                     if (scrollLeft >= singleSetWidth) {
