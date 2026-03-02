@@ -40,15 +40,27 @@ export function StickyContactButtons() {
                         <motion.a
                             key={index}
                             initial={{ x: 80, opacity: 0 }}
-                            animate={{ x: 0, opacity: 1 }}
-                            exit={{ x: 80, opacity: 0 }}
+                            whileTap={{ scale: 0.93 }}
+                            animate={{
+                                x: 0,
+                                opacity: 1,
+                                /* Sadece mobilde hafif nefes alma (pulse) animasyonu */
+                                scale: [1, 1.05, 1],
+                            }}
                             transition={{
+                                /* Giriş animasyonu değerleri */
                                 type: "spring",
                                 stiffness: 300,
                                 damping: 28,
-                                delay: 0.15 * index
+                                delay: 0.15 * index,
+                                /* Pulse animasyonu değerleri */
+                                scale: {
+                                    duration: 2.5,
+                                    repeat: Infinity,
+                                    ease: "easeInOut",
+                                    delay: 0.15 * index + 1 // Giriş animasyonundan sonra başlasın
+                                }
                             }}
-                            whileTap={{ scale: 0.93 }}
                             href={btn.href}
                             target={btn.href.startsWith("http") ? "_blank" : undefined}
                             rel={btn.href.startsWith("http") ? "noopener noreferrer" : undefined}
@@ -56,8 +68,9 @@ export function StickyContactButtons() {
                                 "pointer-events-auto",
                                 "group flex flex-col sm:flex-row items-center justify-center rounded-[20px] sm:rounded-full shadow-lg transition-colors duration-200",
                                 "text-white border border-white/10",
-                                /* Mobil: karemsi ikon+metin, sm+: yatay hap şeklinde hap */
+                                /* Mobil: karemsi ikon+metin, pulse animasyonu. sm+: yatay hap şeklinde, pulse yok (çünkü tailwind hover var) */
                                 "w-[60px] py-2 sm:w-auto sm:h-auto sm:pl-4 sm:pr-6 sm:py-3.5 sm:gap-3",
+                                "sm:!scale-100", // Masaüstünde framer-motion scale'ini eziyoruz ki hover bozulmasın
                                 btn.color,
                                 btn.hoverColor,
                             )}

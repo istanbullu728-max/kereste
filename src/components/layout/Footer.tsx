@@ -14,9 +14,6 @@ export function Footer() {
                         <Link href="/" className="inline-block">
                             <Logo className="h-14 sm:h-16 w-auto" light={false} />
                         </Link>
-                        <p className="text-gray-500 text-sm leading-relaxed max-w-xs font-medium">
-                            Doğanın Gücü, Sanatın İnceliği.
-                        </p>
                     </div>
 
                     {/* Column 2: Kurumsal */}
