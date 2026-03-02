@@ -57,7 +57,7 @@ export function Footer() {
                             </a>
                             <div className="flex items-start gap-3 group">
                                 <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-timber-brown mt-0.5 flex-shrink-0" />
-                                <span className="leading-relaxed">Defne, Hatay</span>
+                                <span className="leading-relaxed">Antakya samandağ istikameti, <br />Dağlı marketini geçtikten sonra <br />(Samandağa giderken) Güneş koleji karşısındayız</span>
                             </div>
                         </div>
 
