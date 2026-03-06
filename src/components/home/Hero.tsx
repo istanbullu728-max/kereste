@@ -91,7 +91,7 @@ export function Hero() {
                 {/* Brand name */}
                 <motion.h2
                     variants={itemVariants}
-                    className="text-white/90 font-display font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[24px] sm:text-xl md:text-2xl lg:text-3xl mb-1.5 sm:mb-2"
+                    className="text-white font-cinzel font-bold uppercase tracking-[0.12em] sm:tracking-[0.15em] text-[26px] sm:text-2xl md:text-3xl lg:text-4xl mb-2 sm:mb-3 pt-4 sm:pt-0"
                     style={{ textShadow: "0 2px 20px rgba(0,0,0,0.5)" }}
                 >
                     Zeynel İstanbullu Kereste

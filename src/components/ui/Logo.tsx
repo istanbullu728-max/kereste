@@ -76,7 +76,7 @@ export function Logo({ className = "", light = false }: { className?: string; li
             {/* Logo Text */}
             <div className="flex flex-col items-center">
                 <span className={cn(
-                    "text-xl font-display font-bold tracking-tight leading-none whitespace-nowrap",
+                    "text-xl font-cinzel font-bold tracking-tight leading-none whitespace-nowrap",
                     light ? "text-white" : "text-timber-anthracite"
                 )}>
                     ZEYNEL İSTANBULLU

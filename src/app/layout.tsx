@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Manrope, Montserrat, Oswald } from "next/font/google"; // Changed Syne to Playfair Display
+import { Playfair_Display, Manrope, Montserrat, Oswald, Cinzel } from "next/font/google"; // Changed Syne to Playfair Display
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -26,6 +26,12 @@ const oswald = Oswald({
   display: "swap",
 });
 
+const cinzel = Cinzel({
+  variable: "--font-cinzel",
+  subsets: ["latin"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Timber & Wood Factory",
   description: "High-end Timber Manufacturing and Design",
@@ -47,7 +53,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet" />
       </head>
       <body
-        className={`${playfair.variable} ${manrope.variable} ${montserrat.variable} ${oswald.variable} antialiased font-sans bg-timber-white text-timber-anthracite selection:bg-timber-beige selection:text-timber-anthracite overflow-x-hidden`}
+        className={`${playfair.variable} ${manrope.variable} ${montserrat.variable} ${oswald.variable} ${cinzel.variable} antialiased font-sans bg-timber-white text-timber-anthracite selection:bg-timber-beige selection:text-timber-anthracite overflow-x-hidden`}
       >
         <main>{children}</main>
         <Footer />
