@@ -6,7 +6,7 @@ export const contactItems: ContactItem[] = [
     {
         icon: MapPin,
         title: "Fabrika Adresi",
-        content: <>Hatay / Defne</>,
+        content: <>Antakya samandağ istikameti,<br />Dağlı marketini geçtikten sonra <br />(Samandağa giderken)<br />Güneş koleji karşısındayız</>,
         delay: 0.1
     },
     {
