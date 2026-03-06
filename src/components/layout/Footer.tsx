@@ -20,9 +20,6 @@ export function Footer() {
                     <div className="flex flex-col items-start space-y-4 sm:space-y-6">
                         <h3 className="font-display font-semibold text-gray-900 text-base sm:text-lg">Kurumsal</h3>
                         <nav className="flex flex-col space-y-2 sm:space-y-3">
-                            <Link href="/hakkimizda" className="text-xs sm:text-sm hover:text-black hover:translate-x-1 transition-all duration-300">
-                                Hakkımızda
-                            </Link>
                             {["Kariyer", "Sertifikalarımız", "Blog"].map((item) => (
                                 <Link key={item} href="#" className="text-xs sm:text-sm hover:text-black hover:translate-x-1 transition-all duration-300">
                                     {item}
