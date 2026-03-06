@@ -120,7 +120,7 @@ export function MobileMenu({ isOpen, onClose, navItems }: MobileMenuProps) {
 
                                 <motion.div variants={itemVariants} className="pt-6">
                                     <Link
-                                        href="/iletisim"
+                                        href="tel:+905399471300"
                                         onClick={onClose}
                                         className="inline-block w-full py-4 bg-timber-anthracite text-white font-sans font-bold text-lg rounded-full active:scale-95 transition-transform shadow-lg"
                                     >

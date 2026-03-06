@@ -137,7 +137,7 @@ export function Hero() {
                 {/* CTA */}
                 <motion.div variants={itemVariants} className="mb-4 sm:mb-10">
                     <Link
-                        href="#calismalarimiz"
+                        href="tel:+905399471300"
                         className="group inline-flex items-center justify-center px-7 py-3.5 sm:px-7 sm:py-3.5 md:px-8 md:py-4 rounded-full text-stone-900 text-[15px] sm:text-sm font-extrabold tracking-widest uppercase shadow-xl transition-all duration-300 active:scale-95"
                         style={{
                             background: "linear-gradient(135deg, #C5A059 0%, #B8860B 50%, #A0722A 100%)",
@@ -146,8 +146,7 @@ export function Hero() {
                         onMouseEnter={e => (e.currentTarget.style.background = "linear-gradient(135deg, #D4AF6A 0%, #C5A059 50%, #B8860B 100%)")}
                         onMouseLeave={e => (e.currentTarget.style.background = "linear-gradient(135deg, #C5A059 0%, #B8860B 50%, #A0722A 100%)")}
                     >
-                        <span className="sm:hidden">Teklif Al</span>
-                        <span className="hidden sm:inline">Çalışmaları İncele</span>
+                        <span>Fiyat Teklifi Al</span>
                         <ArrowRight className="w-[19px] h-[19px] ml-3 transition-transform duration-300 group-hover:translate-x-1" strokeWidth={2.8} />
                     </Link>
                 </motion.div>
