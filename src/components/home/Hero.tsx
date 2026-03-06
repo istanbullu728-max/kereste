@@ -84,8 +84,7 @@ export function Hero() {
                 {/* Badge */}
                 <motion.div variants={itemVariants} className="mb-5 sm:mb-6">
                     <span className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md border border-white/50 text-white text-[10px] sm:text-[11px] font-bold tracking-[0.1em] sm:tracking-[0.15em] px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-center leading-relaxed" style={{ boxShadow: "inset 0 1px 0 rgba(255,255,255,0.3), 0 4px 16px rgba(0,0,0,0.2)" }}>
-                        <span className="w-1.5 h-1.5 rounded-full bg-amber-400 inline-block animate-pulse flex-shrink-0" />
-                        <span>Antakya samandağ istikameti,<br className="sm:hidden" /> Dağlı marketi geçtikten sonra <br className="sm:hidden" />(Samandağa giderken) Güneş koleji karşısındayız</span>
+                        <span>(Hatay Defne)</span>
                     </span>
                 </motion.div>
 
