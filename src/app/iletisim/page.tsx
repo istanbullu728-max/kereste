@@ -112,7 +112,11 @@ export default function ContactPage() {
                             <h3 className="text-2xl font-display font-semibold text-timber-anthracite mb-6">
                                 Mesaj Gönderin
                             </h3>
-                            <form className="space-y-6">
+                            <form
+                                action="https://formspree.io/f/mqaebrda"
+                                method="POST"
+                                className="space-y-6"
+                            >
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="space-y-2">
                                         <label htmlFor="name" className="text-sm font-medium text-timber-anthracite/80 block">
@@ -121,6 +125,8 @@ export default function ContactPage() {
                                         <input
                                             type="text"
                                             id="name"
+                                            name="name"
+                                            required
                                             className="w-full px-4 py-3 rounded-sm bg-gray-50 border border-gray-200 focus:border-timber-highlight focus:ring-1 focus:ring-timber-highlight outline-none transition-all duration-200"
                                             placeholder="Adınız Soyadınız"
                                         />
@@ -132,6 +138,8 @@ export default function ContactPage() {
                                         <input
                                             type="tel"
                                             id="phone"
+                                            name="phone"
+                                            required
                                             className="w-full px-4 py-3 rounded-sm bg-gray-50 border border-gray-200 focus:border-timber-highlight focus:ring-1 focus:ring-timber-highlight outline-none transition-all duration-200"
                                             placeholder="05XX XXX XX XX"
                                         />
@@ -144,6 +152,8 @@ export default function ContactPage() {
                                     <input
                                         type="email"
                                         id="email"
+                                        name="email"
+                                        required
                                         className="w-full px-4 py-3 rounded-sm bg-gray-50 border border-gray-200 focus:border-timber-highlight focus:ring-1 focus:ring-timber-highlight outline-none transition-all duration-200"
                                         placeholder="ornek@email.com"
                                     />
@@ -154,7 +164,9 @@ export default function ContactPage() {
                                     </label>
                                     <textarea
                                         id="message"
+                                        name="message"
                                         rows={4}
+                                        required
                                         className="w-full px-4 py-3 rounded-sm bg-gray-50 border border-gray-200 focus:border-timber-highlight focus:ring-1 focus:ring-timber-highlight outline-none transition-all duration-200 resize-none"
                                         placeholder="Mesajınızı buraya yazabilirsiniz..."
                                     ></textarea>
