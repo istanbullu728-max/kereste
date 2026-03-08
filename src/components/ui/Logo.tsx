@@ -14,30 +14,29 @@ export function Logo({ className = "", light = false }: { className?: string; li
                     xmlns="http://www.w3.org/2000/svg"
                     width={54}
                     height={54}
-                    className="transition-colors duration-300"
                 >
-                    {/* Stylized 'Z' */}
+                    {/* Stylized 'Z' - Fixed Anthracite Color */}
                     <path
-                        d="M20 30H80L35 70H80"
-                        stroke={light ? "white" : "var(--color-timber-anthracite)"}
-                        strokeWidth="12"
+                        d="M15 40H70L25 80H70"
+                        stroke="#1a1a1a"
+                        strokeWidth="13"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                     />
-                    {/* Stylized 'i' next to 'Z' */}
+                    {/* Stylized 'i' - Fixed Anthracite Color */}
                     <path
-                        d="M85 45V70"
-                        stroke={light ? "white" : "var(--color-timber-anthracite)"}
-                        strokeWidth="12"
+                        d="M84 55V80"
+                        stroke="#1a1a1a"
+                        strokeWidth="13"
                         strokeLinecap="round"
                     />
-                    {/* Square dot for 'i' */}
+                    {/* Square dot for 'i' - Fixed Timber Highlight Color */}
                     <rect
-                        x="79"
-                        y="24"
-                        width="12"
-                        height="12"
-                        fill={light ? "white" : "var(--color-timber-highlight)"}
+                        x="78"
+                        y="33"
+                        width="13"
+                        height="13"
+                        fill="#8B5E3C"
                     />
                 </svg>
             </div>
