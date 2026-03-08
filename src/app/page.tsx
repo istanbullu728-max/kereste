@@ -4,7 +4,6 @@ import { Hero } from "@/components/home/Hero";
 
 
 import { Products } from "@/components/home/Products";
-import { Blog } from "@/components/home/Blog";
 import { Contact } from "@/components/home/Contact";
 
 export default function Home() {
@@ -16,7 +15,6 @@ export default function Home() {
 
 
       <Products />
-      <Blog />
       <Contact />
     </main>
   );
