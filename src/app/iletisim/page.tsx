@@ -49,8 +49,10 @@ export default function ContactPage() {
                                     <div>
                                         <h3 className="text-xl font-display font-semibold text-timber-anthracite mb-2">Adres</h3>
                                         <p className="text-timber-anthracite/70 leading-relaxed">
-                                            Keresteciler Sitesi, No: 123,<br />
-                                            Başakşehir / İstanbul
+                                            Antakya samandağ istikameti,<br />
+                                            Dağlı marketini geçtikten sonra<br />
+                                            (Samandağa giderken)<br />
+                                            Güneş koleji karşısındayız
                                         </p>
                                     </div>
                                 </div>
@@ -79,8 +81,8 @@ export default function ContactPage() {
                                     <div>
                                         <h3 className="text-xl font-display font-semibold text-timber-anthracite mb-2">E-posta</h3>
                                         <p className="text-timber-anthracite/70">
-                                            <a href="mailto:info@zeynelistanbullu.com" className="hover:text-timber-highlight transition-colors">
-                                                info@zeynelistanbullu.com
+                                            <a href="mailto:mehmetist048@gmail.com" className="hover:text-timber-highlight transition-colors">
+                                                mehmetist048@gmail.com
                                             </a>
                                         </p>
                                     </div>
