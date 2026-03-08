@@ -153,21 +153,7 @@ export function Hero() {
 
             </motion.div>
 
-            {/* Scroll indicator */}
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.8, duration: 0.8 }}
-                className="absolute bottom-6 sm:bottom-8 z-10 flex flex-col items-center gap-2 text-white/40"
-            >
-                <span className="text-[10px] tracking-widest uppercase font-medium">Keşfet</span>
-                <motion.div
-                    animate={{ y: [0, 6, 0] }}
-                    transition={{ repeat: Infinity, duration: 1.6, ease: "easeInOut" }}
-                >
-                    <ChevronDown size={18} />
-                </motion.div>
-            </motion.div>
+
 
         </section>
     );
