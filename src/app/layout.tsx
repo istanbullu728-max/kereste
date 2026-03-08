@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Manrope, Montserrat, Oswald, Cinzel, Bebas_Neue } from "next/font/google"; // Changed Syne to Playfair Display
+import { Playfair_Display, Manrope, Montserrat, Oswald, Cinzel, Audiowide } from "next/font/google"; // Changed Syne to Playfair Display
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -32,8 +32,8 @@ const cinzel = Cinzel({
   display: "swap",
 });
 
-const bebasNeue = Bebas_Neue({
-  variable: "--font-bebas-neue",
+const audiowide = Audiowide({
+  variable: "--font-audiowide",
   weight: "400",
   subsets: ["latin"],
   display: "swap",
@@ -60,7 +60,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet" />
       </head>
       <body
-        className={`${playfair.variable} ${manrope.variable} ${montserrat.variable} ${oswald.variable} ${cinzel.variable} ${bebasNeue.variable} antialiased font-sans bg-timber-white text-timber-anthracite selection:bg-timber-beige selection:text-timber-anthracite overflow-x-hidden`}
+        className={`${playfair.variable} ${manrope.variable} ${montserrat.variable} ${oswald.variable} ${cinzel.variable} ${audiowide.variable} antialiased font-sans bg-timber-white text-timber-anthracite selection:bg-timber-beige selection:text-timber-anthracite overflow-x-hidden`}
       >
         <main>{children}</main>
         <Footer />
