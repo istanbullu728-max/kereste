@@ -49,13 +49,13 @@ export function Hero() {
             {/* ── Background Image ── */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/hero-bg-main.png"
-                    alt="Zeynel İstanbullu Kereste Depo"
+                    src="/hero-bg-cabin.webp"
+                    alt="Lüks Ahşap Ev Modelleri"
                     fill
-                    className="object-cover object-center"
+                    className="object-cover object-center lg:object-[center_30%]"
                     priority
                     sizes="100vw"
-                    style={{ filter: "brightness(1.3) contrast(0.95)" }}
+                    style={{ filter: "brightness(0.9) contrast(1.1)" }}
                 />
                 {/* ── %35 Karartma Overlay — metin okunabilirliği için ── */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/35 to-black/50" />
