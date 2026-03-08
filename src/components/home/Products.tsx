@@ -145,12 +145,7 @@ export function Products() {
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
 
-                                {/* Hover Button */}
-                                <div className="absolute bottom-6 left-6 opacity-100 lg:opacity-0 group-hover:opacity-100 translate-y-0 lg:translate-y-4 group-hover:translate-y-0 transition-all duration-500">
-                                    <span className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full text-xs font-bold tracking-wide text-timber-anthracite shadow-lg">
-                                        İncele <ArrowRight className="w-3 h-3" />
-                                    </span>
-                                </div>
+
                             </div>
 
                             {/* Minimal Text */}
