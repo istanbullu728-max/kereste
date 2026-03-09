@@ -77,6 +77,27 @@ export function Contact() {
                     </div>
 
                 </div>
+                {/* Local SEO / Service Areas */}
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="mt-20 pt-10 border-t border-timber-anthracite/10"
+                >
+                    <div className="text-center max-w-3xl mx-auto space-y-4">
+                        <h3 className="text-2xl font-display font-bold text-timber-anthracite">Tüm Hatay Bölgesine Hizmet Veriyoruz</h3>
+                        <p className="text-timber-anthracite/60 leading-relaxed font-sans">
+                            Zeynel İstanbullu Kereste, <strong className="text-timber-anthracite">Hatay'ın en köklü kereste fabrikası</strong> olarak sadece Antakya'da değil; İskenderun, Defne, Samandağ, Arsuz, Dörtyol ve Payas bölgelerine de en kaliteli ahşap ürünlerini ve inşaatlık keresteleri ulaştırmaktadır.
+                        </p>
+                        <div className="flex flex-wrap justify-center gap-2 pt-2">
+                            {["Antakya", "İskenderun", "Defne", "Samandağ", "Arsuz", "Dörtyol", "Kırıkhan", "Reyhanlı", "Payas"].map((city) => (
+                                <span key={city} className="px-3 py-1 bg-gray-100 text-gray-500 text-xs rounded-full border border-gray-200 uppercase tracking-tighter">
+                                    {city} Kereste
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+                </motion.div>
             </div>
         </section>
     );

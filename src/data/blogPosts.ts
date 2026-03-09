@@ -5,39 +5,44 @@ export interface BlogPost {
     date: string;
     image: string;
     category: string;
+    slug: string;
 }
 
 export const blogPosts: BlogPost[] = [
     {
         id: 1,
-        title: "Modern Ahşap Evlerin Avantajları",
-        summary: "Doğallık ve konforun buluştuğu ahşap ev modelleri, enerji verimliliği ve deprem dayanıklılığı ile öne çıkıyor.",
-        date: "12 Mart 2024",
-        image: "/blog/cabin-view.png",
-        category: "Mimari"
+        title: "2026 Hatay Kereste Fiyatları ve İnşaat Sektörü",
+        summary: "Hatay ve Antakya bölgesinde inşaatlık kereste, lambri ve plywood fiyatlarındaki güncel değişimleri ve projeleriniz için en uygun zamanı analiz ediyoruz.",
+        date: "9 Mart 2026",
+        image: "/hero-bg-forest.jpg",
+        category: "Piyasa",
+        slug: "2026-hatay-kereste-fiyatlari"
     },
     {
         id: 2,
-        title: "Kaliteli Kereste Seçimi Nasıl Yapılır?",
-        summary: "Projelerinizde uzun ömürlü sonuçlar almak için ahşap dokusu, nem oranı ve ağaç türü seçiminde dikkat etmeniz gerekenler.",
-        date: "5 Mart 2024",
-        image: "/blog/wood-texture.png",
-        category: "Rehber"
+        title: "Antakya'da Ev Dekorasyonunda Lambri Kullanımı",
+        summary: "Ahşap duvar panellerinin (lambri) avantajlarını ve Hatay iklimine uygunluğunu, modern ve geleneksel ev dekorasyonu trendleriyle birlikte inceleyin.",
+        date: "9 Mart 2026",
+        image: "/ahsap-lambri-v2.jpg",
+        category: "Dekorasyon",
+        slug: "antakyada-lambri-kullanimi"
     },
     {
         id: 3,
-        title: "İnşaat Sektöründe Ahşabın Geleceği",
-        summary: "Sürdürülebilir yapı malzemeleri arasında ilk sırada yer alan ahşabın modern inşaat projelerindeki yükselişi.",
-        date: "28 Şubat 2024",
-        image: "/blog/construction.png",
-        category: "Sektör"
+        title: "İnşaatlık Kereste Seçerken Dikkat Edilmesi Gerekenler",
+        summary: "Dayanıklı yapılar için doğru kereste seçimi kritiktir. Çatı karkasından kalıplık keresteye kadar Hatay'daki projeleriniz için teknik rehber.",
+        date: "1 Mart 2026",
+        image: "/kaliplik-kereste-new.jpg",
+        category: "Rehber",
+        slug: "insaatlik-kereste-secimi"
     },
     {
         id: 4,
-        title: "Sürdürülebilir Ormancılık ve Ahşap Üretimi",
-        summary: "Doğayı koruyarak üretim yapmanın önemi ve gelecek nesillere daha yeşil bir dünya bırakma hedefimiz.",
-        date: "20 Şubat 2024",
-        image: "/blog/forestry.png",
-        category: "Vizyon"
+        title: "Antakya'da Silinmiş Kereste ve Kapı Sereni Üretimi",
+        summary: "Mobilya ve kapı imalatında kullanılan yüksek kaliteli silinmiş kereste ve kapı sereni ürünlerimizin teknik özelliklerini inceleyin.",
+        date: "25 Şubat 2026",
+        image: "/kapi-sereni-v2.png",
+        category: "Üretim",
+        slug: "silinmis-kereste-uretimi"
     }
 ];

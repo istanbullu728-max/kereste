@@ -3,8 +3,48 @@ import { Instagram, Linkedin, Twitter, MapPin, Phone, Mail, ArrowRight } from "l
 import { Logo } from "@/components/ui/Logo";
 
 export function Footer() {
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Hatay Kereste - Zeynel İstanbullu",
+        "image": "https://hataykereste.com/hero-bg-main.png",
+        "@id": "https://hataykereste.com",
+        "url": "https://hataykereste.com",
+        "telephone": "+905399471300",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Antakya Samandağ Yolu, Güneş Koleji Karşısı",
+            "addressLocality": "Defne",
+            "addressRegion": "Hatay",
+            "postalCode": "31160",
+            "addressCountry": "TR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 36.1740957,
+            "longitude": 36.113866
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        }
+    };
+
     return (
         <footer className="bg-gray-50 border-t border-gray-200 text-gray-600">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <div className="container mx-auto px-5 sm:px-6 py-10 sm:py-14 md:py-16">
                 {/* Grid: 1 col mobile, 3 col desktop for balance */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 sm:gap-12 md:gap-16">
@@ -19,13 +59,19 @@ export function Footer() {
                         </p>
                     </div>
 
-                    {/* Column 2: Çalışmalarımız */}
+                    {/* Column 2: Kurumsal */}
                     <div className="flex flex-col items-center md:items-start space-y-6">
-                        <h3 className="font-display font-bold text-gray-900 text-lg uppercase tracking-wider">Çalışmalarımız</h3>
+                        <h3 className="font-display font-bold text-gray-900 text-lg uppercase tracking-wider">Hızlı Linkler</h3>
                         <nav className="flex flex-col items-center md:items-start space-y-3">
-                            {["Kereste Grupları", "Plywood", "Lambri", "Özel Kesim"].map((item) => (
-                                <Link key={item} href="/products" className="text-sm hover:text-timber-brown hover:translate-x-1 transition-all duration-300">
-                                    {item}
+                            {[
+                                { name: "Anasayfa", href: "/" },
+                                { name: "Ürünlerimiz", href: "/urunler" },
+                                { name: "Blog", href: "/blog" },
+                                { name: "Hakkımızda", href: "/hakkimizda" },
+                                { name: "İletişim", href: "/iletisim" }
+                            ].map((item) => (
+                                <Link key={item.name} href={item.href} className="text-sm hover:text-timber-brown transition-colors">
+                                    {item.name}
                                 </Link>
                             ))}
                         </nav>
@@ -45,7 +91,12 @@ export function Footer() {
                             </a>
                             <div className="flex items-start gap-3 group text-center md:text-left">
                                 <MapPin className="w-5 h-5 text-timber-brown mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform" />
-                                <span className="leading-relaxed">Antakya samandağ istikameti, <br />Dağlı marketini geçtikten sonra <br />(Samandağa giderken) Güneş koleji karşısındayız</span>
+                                <span className="leading-relaxed">
+                                    Antakya samandağ istikameti, <br />
+                                    Dağlı marketini geçtikten sonra <br />
+                                    (Samandağa giderken) <br />
+                                    Güneş koleji karşısındayız
+                                </span>
                             </div>
                         </div>
 

@@ -140,12 +140,11 @@ export function Products() {
                             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-4 shadow-sm group-hover:shadow-xl transition-shadow duration-500">
                                 <img
                                     src={item.image}
-                                    alt={item.title}
+                                    alt={`${item.title} - Antakya inşaatlık kereste ve Hatay kereste ürünleri`}
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    loading="lazy"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
-
-
                             </div>
 
                             {/* Minimal Text */}
@@ -164,7 +163,12 @@ export function Products() {
                     <div className="w-1 flex-shrink-0" />
                 </div>
 
-
+                {/* Local SEO Text Block */}
+                <div className="mt-12 text-center max-w-4xl mx-auto px-4">
+                    <p className="text-xs text-timber-anthracite/40 leading-relaxed font-sans">
+                        Zeynel İstanbullu Kereste olarak Hatay Antakya'da ahşap lambri, kütük lambri, silinmiş kereste, inşaatlık kereste, plywood ve şıngıl gibi tüm ihtiyaçarınızda yanınızdayız. 30 yıllık tecrübemizle en uygun fiyatlı ve kaliteli kereste ürünlerini tüm Hatay genelinde (İskenderun, Defne, Samandağ vb.) müşterilerimize ulaştırıyoruz.
+                    </p>
+                </div>
             </div>
         </section>
     );

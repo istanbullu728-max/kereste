@@ -50,10 +50,11 @@ export function Hero() {
             <div className="absolute inset-0 z-0">
                 <Image
                     src="/hero-bg-cabin.webp"
-                    alt="Lüks Ahşap Ev Modelleri"
+                    alt="Hatay kereste ürünleri ve inşaatlık kereste üretimi - Zeynel İstanbullu"
                     fill
                     className="object-cover object-center lg:object-[center_30%]"
                     priority
+                    loading="eager"
                     sizes="100vw"
                     style={{ filter: "brightness(0.9) contrast(1.1)" }}
                 />
@@ -89,18 +90,18 @@ export function Hero() {
                 </motion.div>
 
                 {/* Brand name */}
-                <motion.h2
+                <motion.h1
                     variants={itemVariants}
-                    className="text-white font-audiowide font-normal uppercase tracking-[0.1em] sm:tracking-[0.12em] text-[24px] sm:text-2xl md:text-3xl lg:text-4xl mb-2 sm:mb-3 pt-4 sm:pt-0"
+                    className="text-white font-outfit font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[22px] sm:text-2xl md:text-3xl lg:text-4xl mb-2 sm:mb-3 pt-4 sm:pt-0"
                     style={{ textShadow: "0 2px 20px rgba(0,0,0,0.5)" }}
                 >
-                    Zeynel İstanbullu Kereste
-                </motion.h2>
+                    Hatay'ın Güvenilir Kereste Tedarikçisi <span className="sr-only">Zeynel İstanbullu Kereste</span>
+                </motion.h1>
 
                 {/* Divider */}
                 <motion.div variants={itemVariants} className="flex items-center gap-4 sm:gap-4 mb-3 sm:mb-0">
                     <span className="h-[2px] w-16 sm:w-20 bg-gradient-to-r from-transparent to-amber-400/80" />
-                    <span className="text-amber-400 text-xl sm:text-xl">✦</span>
+                    <span className="text-amber-400 text-xl sm:text-xl font-bold uppercase tracking-widest text-[10px]">Hatay Kereste Fabrikası</span>
                     <span className="h-[2px] w-16 sm:w-20 bg-gradient-to-l from-transparent to-amber-400/80" />
                 </motion.div>
 
@@ -110,7 +111,7 @@ export function Hero() {
                     className="relative h-[72px] sm:h-[68px] md:h-[82px] lg:h-[95px] w-full flex justify-center items-center overflow-hidden mb-5 sm:mb-4"
                 >
                     <AnimatePresence mode="wait">
-                        <motion.h1
+                        <motion.h2
                             key={products[index]}
                             initial={{ y: "100%", opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
@@ -120,7 +121,7 @@ export function Hero() {
                             style={{ textShadow: "0 4px 30px rgba(0,0,0,0.6)" }}
                         >
                             {products[index]}
-                        </motion.h1>
+                        </motion.h2>
                     </AnimatePresence>
                 </motion.div>
 
@@ -130,9 +131,9 @@ export function Hero() {
                     className="text-white/95 text-[16px] sm:text-base md:text-lg font-normal tracking-wide mb-9 sm:mb-10 max-w-sm sm:max-w-lg"
                     style={{ textShadow: "0 2px 12px rgba(0,0,0,0.8), 0 1px 3px rgba(0,0,0,0.9)" }}
                 >
-                    30 yıllık tecrübeyle kaliteli ahşap ürünler,{" "}
+                    Hatay ve çevresinde 30 yıllık tecrübeyle kaliteli ahşap ürünler,{" "}
                     <span className="hidden sm:inline"><br /></span>
-                    güvenilir teslimat ve uzman hizmet.
+                    uygun fiyatlı inşaatlık kereste ve uzman hizmet.
                 </motion.p>
                 {/* CTA */}
                 <motion.div variants={itemVariants} className="mb-4 sm:mb-10">
