@@ -6,7 +6,7 @@ export function Footer() {
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Hatay Kereste - Zeynel İstanbullu",
+        "name": "Zeynel İstanbullu Kereste - Hatay Kereste",
         "image": "https://hataykereste.com/hero-bg-main.png",
         "@id": "https://hataykereste.com",
         "url": "https://hataykereste.com",

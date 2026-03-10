@@ -47,10 +47,10 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: "Hatay Kereste | İnşaatlık Kereste, Lambri ve Ahşap Çözümleri",
+    default: "Zeynel İstanbullu Kereste - Hatay Kereste",
     template: "%s | Zeynel İstanbullu Kereste"
   },
-  description: "Hatay Antakya merkezli Zeynel İstanbullu Kereste; inşaatlık kereste, lambri ve ahşap çözümlerinde en uygun fiyatlı ve kaliteli hizmeti sunar. Hemen keşfedin.",
+  description: "Zeynel İstanbullu Kereste; Hatay Antakya merkezli inşaatlık kereste, lambri ve ahşap çözümlerinde en uygun fiyatlı ve kaliteli hizmeti sunar. Hemen keşfedin.",
   keywords: ["hatay kereste", "antakya kereste", "kereste fiyatları", "ahşap lambri", "biçilmiş kereste", "kütük lambri", "kapı sereni", "plywood", "şıngıl", "hatay kereste imalatı"],
   authors: [{ name: "Zeynel İstanbullu Kereste" }],
   creator: "Zeynel İstanbullu Kereste",
@@ -65,8 +65,8 @@ export const metadata: Metadata = {
     apple: "/icon.svg",
   },
   openGraph: {
-    title: "Hatay Kereste | İnşaatlık Kereste, Lambri ve Ahşap Çözümleri",
-    description: "Hatay Antakya merkezli Zeynel İstanbullu Kereste; inşaatlık kereste, lambri ve ahşap çözümlerinde en uygun fiyatlı ve kaliteli hizmeti sunar. Hemen keşfedin.",
+    title: "Zeynel İstanbullu Kereste - Hatay Kereste",
+    description: "Zeynel İstanbullu Kereste; Hatay Antakya merkezli inşaatlık kereste, lambri ve ahşap çözümlerinde en uygun fiyatlı ve kaliteli hizmeti sunar. Hemen keşfedin.",
     url: "https://hataykereste.com",
     siteName: "Zeynel İstanbullu Kereste",
     images: [
