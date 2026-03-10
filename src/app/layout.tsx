@@ -46,12 +46,16 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://hataykereste.com'),
+  alternates: {
+    canonical: '/',
+  },
   title: {
     default: "Zeynel İstanbullu Kereste - Hatay Kereste",
     template: "%s | Zeynel İstanbullu Kereste"
   },
   description: "Zeynel İstanbullu Kereste; Hatay Antakya merkezli inşaatlık kereste, lambri ve ahşap çözümlerinde en uygun fiyatlı ve kaliteli hizmeti sunar. Hemen keşfedin.",
-  keywords: ["hatay kereste", "antakya kereste", "kereste fiyatları", "ahşap lambri", "biçilmiş kereste", "kütük lambri", "kapı sereni", "plywood", "şıngıl", "hatay kereste imalatı"],
+  keywords: ["hatay kereste", "hataykereste", "antakya kereste", "kereste fiyatları", "ahşap lambri", "biçilmiş kereste", "kütük lambri", "kapı sereni", "plywood", "şıngıl", "hatay kereste imalatı", "zeynel istanbullu"],
   authors: [{ name: "Zeynel İstanbullu Kereste" }],
   creator: "Zeynel İstanbullu Kereste",
   publisher: "Zeynel İstanbullu Kereste",
@@ -83,6 +87,7 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    nocache: true,
     googleBot: {
       index: true,
       follow: true,

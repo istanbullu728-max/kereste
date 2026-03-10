@@ -55,7 +55,7 @@ export function Footer() {
                             <Logo className="h-16 sm:h-20 w-auto" light={false} />
                         </Link>
                         <p className="text-sm leading-relaxed max-w-xs text-gray-500">
-                            Kalite ve güvenin adresi Zeynel İstanbullu Kereste, yapı projelerinizde yanınızda.
+                            Hatay kereste ve hataykereste arayışlarınızda kalite ve güvenin adresi Zeynel İstanbullu Kereste, tüm ahşap yapı projelerinizde yanınızda.
                         </p>
                     </div>
 

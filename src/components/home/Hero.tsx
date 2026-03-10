@@ -98,6 +98,11 @@ export function Hero() {
                     Hatay'ın Güvenilir Kereste Tedarikçisi <span className="sr-only">Zeynel İstanbullu Kereste</span>
                 </motion.h1>
 
+                {/* SEO Text */}
+                <div className="sr-only">
+                    Hatay Kereste, hataykereste, Antakya kereste imalatı ve en uygun kereste fiyatları için Zeynel İstanbullu.
+                </div>
+
                 {/* Divider */}
                 <motion.div variants={itemVariants} className="flex items-center gap-4 sm:gap-4 mb-3 sm:mb-0">
                     <span className="h-[2px] w-16 sm:w-20 bg-gradient-to-r from-transparent to-amber-400/80" />
