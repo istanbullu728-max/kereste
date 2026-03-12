@@ -13,7 +13,7 @@ export const contactItems: ContactItem[] = [
         icon: Phone,
         title: "Telefon & WhatsApp",
         content: "+90 539 947 13 00",
-        href: "tel:+905399471300",
+        href: "https://wa.me/905399471300?text=Merhaba+fiyat+teklifi+almak+istiyorum.",
         delay: 0.2
     },
     {

@@ -21,7 +21,9 @@ export function TopBar() {
                 <div className="flex items-center gap-4 ml-auto">
                     {/* WhatsApp Button */}
                     <Link
-                        href="https://wa.me/"
+                        href="https://wa.me/905399471300?text=Merhaba+fiyat+teklifi+almak+istiyorum."
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center gap-2 hover:text-green-400 transition-colors duration-300"
                     >
                         <MessageCircle size={14} />

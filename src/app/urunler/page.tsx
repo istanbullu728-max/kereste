@@ -57,7 +57,9 @@ export default function ProductsPage() {
                             İnşaatlık kereste ve diğer ürünlerimizde dilediğiniz ölçüde kesim yapabilmekteyiz. Hatay sınırları içerisinde hızlı teslimat sağlıyoruz.
                         </p>
                         <a
-                            href="tel:+905399471300"
+                            href="https://wa.me/905399471300?text=Merhaba+fiyat+teklifi+almak+istiyorum."
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-flex items-center justify-center px-10 py-4 bg-amber-400 text-timber-anthracite rounded-full font-bold uppercase tracking-widest hover:bg-amber-300 transition-colors"
                         >
                             Hemen Teklif Alın

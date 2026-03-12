@@ -143,7 +143,9 @@ export function Hero() {
                 {/* CTA */}
                 <motion.div variants={itemVariants} className="mb-4 sm:mb-10">
                     <Link
-                        href="tel:+905399471300"
+                        href="https://wa.me/905399471300?text=Merhaba+fiyat+teklifi+almak+istiyorum."
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="group inline-flex items-center justify-center px-7 py-3.5 sm:px-7 sm:py-3.5 md:px-8 md:py-4 rounded-full text-stone-900 text-[15px] sm:text-sm font-extrabold tracking-widest uppercase shadow-xl transition-all duration-300 active:scale-95"
                         style={{
                             background: "linear-gradient(135deg, #C5A059 0%, #B8860B 50%, #A0722A 100%)",

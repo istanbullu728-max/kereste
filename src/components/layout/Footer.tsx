@@ -111,7 +111,9 @@ export function Footer() {
                             </div>
 
                             <Link
-                                href="tel:+905399471300"
+                                href="https://wa.me/905399471300?text=Merhaba+fiyat+teklifi+almak+istiyorum."
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 bg-[#8B5E3C] text-white px-8 py-3.5 rounded-xl text-base font-semibold hover:bg-[#6D482D] transition-all duration-300 shadow-lg hover:shadow-timber-brown/20 uppercase tracking-wide"
                             >
                                 <span>Fiyat Teklifi Al</span>

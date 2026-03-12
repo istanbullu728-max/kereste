@@ -26,7 +26,9 @@ export function FloatingActionBar() {
 
                         {/* WhatsApp Button */}
                         <a
-                            href="https://wa.me/905399471300"
+                            href="https://wa.me/905399471300?text=Merhaba+fiyat+teklifi+almak+istiyorum."
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="flex-1 group flex items-center justify-center gap-2 bg-gradient-to-br from-[#25D366] to-[#128C7E] text-white p-3 rounded-xl shadow-lg active:scale-95 transition-transform"
                         >
                             <MessageCircle size={20} fill="currentColor" className="text-white/90" />
