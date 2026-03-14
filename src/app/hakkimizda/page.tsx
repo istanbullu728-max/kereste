@@ -3,8 +3,8 @@ import { Footer } from "@/components/layout/Footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Hakkımızda",
-    description: "Zeynel İstanbullu Kereste olarak Hatay'da 30 yılı aşkın süredir kaliteli ahşap ve kereste çözümleri sunuyoruz. Köklü geçmişimizle güvenin adresiyiz.",
+    title: "Hakkımızda | Zeynel İstanbullu Hatay Kereste",
+    description: "Zeynel İstanbullu Kereste; Hatay'da 30 yılı aşkın tecrübesiyle kaliteli ahşap ve inşaatlık kereste çözümleri sunan en köklü fabrikadır. Tarihçemizi ve vizyonumuzu inceleyin.",
 };
 
 export default function AboutPage() {

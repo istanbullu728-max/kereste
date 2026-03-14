@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { blogPosts } from '@/data/blogPosts';
+import seoData from '../../seo_dataset.json';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const blogEntries: MetadataRoute.Sitemap = blogPosts.map((post) => ({
@@ -9,11 +10,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
     }));
 
+    const seoEntries: MetadataRoute.Sitemap = seoData.map((item) => ({
+        url: `https://hataykereste.com/${item.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.6,
+    }));
+
     return [
         {
             url: 'https://hataykereste.com',
             lastModified: new Date(),
-            changeFrequency: 'yearly',
+            changeFrequency: 'monthly',
             priority: 1,
         },
         {
@@ -29,6 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.8,
         },
         ...blogEntries,
+        ...seoEntries,
         {
             url: 'https://hataykereste.com/hakkimizda',
             lastModified: new Date(),

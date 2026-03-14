@@ -51,11 +51,11 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   title: {
-    default: "Zeynel İstanbullu Kereste - Hatay Kereste",
+    default: "Zeynel İstanbullu Kereste - Hatay Kereste ve 2026 Fiyatları",
     template: "%s | Zeynel İstanbullu Kereste"
   },
-  description: "Zeynel İstanbullu Kereste; Hatay Antakya merkezli inşaatlık kereste, lambri ve ahşap çözümlerinde en uygun fiyatlı ve kaliteli hizmeti sunar. Hemen keşfedin.",
-  keywords: ["hatay kereste", "hataykereste", "antakya kereste", "kereste fiyatları", "ahşap lambri", "biçilmiş kereste", "kütük lambri", "kapı sereni", "plywood", "şıngıl", "hatay kereste imalatı", "zeynel istanbullu"],
+  description: "Zeynel İstanbullu Kereste; Hatay Antakya merkezli inşaatlık kereste, lambri ve ahşap çözümlerinde en uygun fiyatlı ve kaliteli hizmeti sunar. 2026 kereste fiyatları için hemen keşfedin.",
+  keywords: ["hatay kereste", "hataykereste", "antakya kereste", "zeynel istanbullu kereste", "hatay kereste fiyatları", "kereste fabrikası hatay", "ahşap lambri hatay", "biçilmiş kereste", "kütük lambri", "kapı sereni", "plywood hatay", "şıngıl hatay", "hatay kereste imalatı"],
   authors: [{ name: "Zeynel İstanbullu Kereste" }],
   creator: "Zeynel İstanbullu Kereste",
   publisher: "Zeynel İstanbullu Kereste",

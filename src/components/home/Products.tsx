@@ -166,7 +166,7 @@ export function Products() {
                 {/* Local SEO Text Block */}
                 <div className="mt-12 text-center max-w-4xl mx-auto px-4">
                     <p className="text-xs text-timber-anthracite/40 leading-relaxed font-sans">
-                        Zeynel İstanbullu Kereste olarak Hatay Antakya'da ahşap lambri, kütük lambri, silinmiş kereste, inşaatlık kereste, plywood ve şıngıl gibi tüm ihtiyaçarınızda yanınızdayız. 30 yıllık tecrübemizle en uygun fiyatlı ve kaliteli kereste ürünlerini tüm Hatay genelinde (İskenderun, Defne, Samandağ vb.) müşterilerimize ulaştırıyoruz.
+                        Zeynel İstanbullu Kereste olarak Hatay Antakya'da <strong>hatay kereste fiyatları</strong>, ahşap lambri, kütük lambri, silinmiş kereste, inşaatlık kereste, plywood ve şıngıl gibi tüm ihtiyaçlarınızda yanınızdayız. 30 yıllık tecrübemizle en kaliteli kereste ürünlerini tüm Hatay genelinde (İskenderun, Defne, Samandağ vb.) en uygun fiyat garantisiyle ulaştırıyoruz.
                     </p>
                 </div>
             </div>

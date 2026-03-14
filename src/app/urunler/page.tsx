@@ -4,8 +4,8 @@ import { Metadata } from "next";
 import { products } from "@/data/products";
 
 export const metadata: Metadata = {
-    title: "Ürünlerimiz",
-    description: "Ahşap lambri, kütük lambri, plywood, kapı sereni, şıngıl ve inşaatlık kereste çeşitlerimiz. Hatay'da en uygun fiyatlı ve kaliteli kereste ürünleri Zeynel İstanbullu'da.",
+    title: "Ürünlerimiz ve 2026 Kereste Fiyatları",
+    description: "Hatay'ın en uygun fiyatlı ahşap lambri, kütük lambri, plywood, kapı sereni, şıngıl ve inşaatlık kereste çeşitleri. Zeynel İstanbullu Kereste kalite garantisiyle.",
 };
 
 export default function ProductsPage() {
@@ -14,7 +14,7 @@ export default function ProductsPage() {
             <Header />
             <div className="pt-32 pb-20 container mx-auto px-4 sm:px-6">
                 <div className="text-center mb-16 max-w-3xl mx-auto">
-                    <h1 className="text-4xl md:text-5xl font-display font-medium text-timber-anthracite mb-6">Ürün Kataloğumuz</h1>
+                    <h1 className="text-4xl md:text-5xl font-display font-medium text-timber-anthracite mb-6">Hatay Kereste Ürünleri & 2026 Fiyatları</h1>
                     <p className="text-timber-anthracite/60 text-lg">
                         Geniş ürün yelpazemizle inşaat ve dekorasyon projeleriniz için en kaliteli ahşap çözümlerini sunuyoruz. Hatay Antakya'daki tesisimizde özenle hazırlanan ürünlerimizi inceleyin.
                     </p>

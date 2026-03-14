@@ -95,7 +95,7 @@ export function Hero() {
                     className="text-white font-outfit font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[22px] sm:text-2xl md:text-3xl lg:text-4xl mb-2 sm:mb-3 pt-4 sm:pt-0"
                     style={{ textShadow: "0 2px 20px rgba(0,0,0,0.5)" }}
                 >
-                    Hatay'ın Güvenilir Kereste Tedarikçisi <span className="sr-only">Zeynel İstanbullu Kereste</span>
+                    Zeynel İstanbullu Hatay Kereste Fabrikası <span className="sr-only">Kereste ve Ahşap Çözümleri</span>
                 </motion.h1>
 
                 {/* SEO Text */}
